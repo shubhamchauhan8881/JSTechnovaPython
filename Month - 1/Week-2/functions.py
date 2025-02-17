@@ -110,3 +110,5 @@ def mainApp():
 
 
 mainApp()
+
+print("week 2")
