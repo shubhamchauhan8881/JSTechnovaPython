@@ -90,3 +90,18 @@ import math  #importing module
 print( math.sqrt(4) )  # sqrt is function inside math module/library
 ```
 
+
+steps to upload codes: 
+    -> initializaation ( git init )
+    -> add repo link (git remote add <nickname> <git url> )
+    -> add files ( git add filename/foldername  OR  git add .  adds all files and folders )
+    -> commit the chnages  ( git commit -m "message" )
+    -> push the code to github ( git push <nickname> <branch_name> )
+
+
+steps to download codes: 
+    -> initialization ( git init )
+    -> add repo link (git remote add <nickname> <git url> )
+    -> git pull <nickname> <branch_name>
+
+
