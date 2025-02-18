@@ -116,7 +116,7 @@ def fn():
 
 ---
 
-# Python Variables
+## Python Variables
 
 ## What is a Variable?
 A variable is a named storage location in a program that holds a value. The value of a variable can change during the execution of the program. It acts like a container to hold/store a piece of data.
@@ -155,7 +155,7 @@ print(keyword.kwlist)
 
 ---
 
-# Python Data Types
+## Python Data Types
 Python is dynamically typed, meaning you don’t need to declare variable types explicitly.
 
 ### Built-in Data Types:
@@ -170,7 +170,7 @@ Python is dynamically typed, meaning you don’t need to declare variable types 
 
 ---
 
-# Operators in Python
+## Operators in Python
 Operators are used to perform operations on variables and values.
 
 ### Types of Operators:
@@ -184,7 +184,7 @@ Operators are used to perform operations on variables and values.
 
 ---
 
-# Control Statements (if-else, loops: for, while)
+### Control Statements (if-else, loops: for, while)
 - **if-else:** Used for conditional execution.
 - **for loop:** Iterates over sequences like lists and strings.
 - **while loop:** Repeats execution while a condition is true.
@@ -192,9 +192,9 @@ Operators are used to perform operations on variables and values.
 
 ---
 
-# Lists in Python
+### Lists in Python
 
-## Features of Python Lists
+**Features of Python Lists**
 ✅ Ordered → Elements maintain their insertion order.
 ✅ Mutable → Can modify, add, or remove elements.
 ✅ Heterogeneous → Can store different data types.
@@ -204,4 +204,47 @@ Operators are used to perform operations on variables and values.
 ```python
 my_list = [1, 2, 3, 4, 5]
 print(my_list)
+```
+
+## Ways to Create a List
+
+1. **Using Square Brackets (`[]`)**:
+```python
+    my_list = [1, 2, 3, 4, 5]
+```
+2. **Using list() Constructor:**
+```python
+    my_list = list((1, 2, 3, 4, 5))
+```
+3. **Using range() with list()**:
+```python
+    my_list = list(range(1, 6))
+```
+
+### List Methods
+Python lists provide several built-in methods for manipulation:
+
+**Method	Description**
+```python
+append(x) #Adds an element x at the end of the list.
+extend(iterable)  #Extends the list by adding elements from an iterable.
+insert(i, x) #Inserts x at index i.
+remove(x) #Removes the first occurrence of x.
+pop(i)  #Removes and returns the element at index i (default: last).
+clear()	#Removes all elements from the list.
+index(x, start, end)	#Returns the index of x (within optional range).
+count(x) #Returns the number of times x appears in the list.
+sort(key=None, reverse=False)	#Sorts the list in ascending order (or by key).
+reverse()	#Reverses the order of elements.
+copy()	#Returns a shallow copy of the list.
+
+```
+
+**Eample and usage**
+```python
+my_list = [1, 2, 3, 4, 5]
+my_list.append(6)  # [1, 2, 3, 4, 5, 6]
+my_list.remove(3)  # [1, 2, 4, 5, 6]
+print(my_list.index(4))  # 2
+my_list.sort(reverse=True)  # [6, 5, 4, 2, 1]
 ```
