@@ -25,7 +25,7 @@ def fn_name(name):
 # x = 50
 # x is variable
 
-sum = lambda a, b: print(a)
+# sum = lambda a, b: print(a)
     
 # x is still a variable
 # print(sum(50, 60))
