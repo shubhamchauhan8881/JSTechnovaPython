@@ -90,6 +90,49 @@ import math  #importing module
 print( math.sqrt(4) )  # sqrt is function inside math module/library
 ```
 
+### Scope of variables
+
+# Scope of Variables in Python
+
+The **scope** of a variable in Python determines where that variable can be accessed or modified within a program.
+
+## Types of Variable Scope
+
+### 1. **Local Scope**
+- Variables declared inside a function are **local** to that function.
+- They cannot be accessed outside the function.
+
+**Example:**
+```python
+def my_function():
+    x = 10  # Local variable
+    print(x)  # Accessible within the function
+
+my_function()
+# print(x)  # Error: x is not defined outside the function
+```
+
+### 1. **Global Scope**
+- Variables declared outside functions or classes have global scope.
+- They can be accessed anywhere in the program.
+- To modify a global variable inside a function, use the global keyword.
+
+**Example**
+```python
+marks = 80 #global variable
+def re_evaluation():
+    marks = 90
+re_evaluation()
+print(marks) # output 80
+
+#to modify global variable
+def re_evaluation2():
+    global marks
+    marks = 90
+re_evaluation2()
+print(marks) # output 90
+```
+
 
 steps to upload codes: 
     -> initializaation ( git init )
